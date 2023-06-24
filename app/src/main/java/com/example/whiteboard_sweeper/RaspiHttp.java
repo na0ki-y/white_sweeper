@@ -11,15 +11,17 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class RaspiHttp extends AsyncTask<String,Void,Void> {//ここが引数
+                                                            //これはdoInBackgroundメソッドの引数の型, onProgressUpdateメソッドの引数の型, onPostExecuteメソッドの戻り値の型
     private Activity parentActivity;
     private ProgressDialog dialog=null;
-    private final String DEFAULTURL="http://192.168.11.36/~pi/ledtest.php?";
+    private final String DEFAULTURL="http://192.168.11.42:8000";
     private String uri=null;
     public RaspiHttp(Activity parentActivity){
         this.parentActivity=parentActivity;
     }
     @Override
     protected void onPreExecute(){
+
         dialog=new ProgressDialog(parentActivity);
         dialog.setMessage("通信中");
         dialog.show();
@@ -28,7 +30,6 @@ public class RaspiHttp extends AsyncTask<String,Void,Void> {//ここが引数
     @Override
     protected  Void doInBackground(String...arg0){//ここが引数
         uri=DEFAULTURL+"/"+arg0[0];
-        Log.d("RaspiHttp",uri);
         exec_get();
         return  null;
     }
@@ -39,6 +40,7 @@ public class RaspiHttp extends AsyncTask<String,Void,Void> {//ここが引数
     }
 
     private String exec_get(){
+        Log.d("RaspiHttp",uri);
         HttpURLConnection http=null;
         InputStream in=null;
         String src=new String();
@@ -58,6 +60,7 @@ public class RaspiHttp extends AsyncTask<String,Void,Void> {//ここが引数
             }
         }
         catch (Exception e){
+            Log.d("RaspiHttp","ERROR");
             e.printStackTrace();
         }finally {
             try{
