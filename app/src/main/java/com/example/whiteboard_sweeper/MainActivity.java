@@ -68,10 +68,14 @@ public class MainActivity  extends AppCompatActivity implements View.OnClickList
         String url_prm="Long";
         if (id == R.id.button_left) {
             url_prm=UrlArray[num_forward_or_back][0];
+        } else if (id == R.id.button_left_turn) {
+            url_prm=UrlArray[num_forward_or_back][1];
         } else if (id == R.id.button_go) {
-
+            url_prm=UrlArray[num_forward_or_back][2];
+        } else if (id == R.id.button_right_turn) {
+            url_prm=UrlArray[num_forward_or_back][3];
         } else if (id == R.id.button_right) {
-
+            url_prm=UrlArray[num_forward_or_back][4];
         } else {
 
         }
