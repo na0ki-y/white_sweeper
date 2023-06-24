@@ -47,7 +47,7 @@
                     android:layout_width="15dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textSize="18sp"
+                    android:textSize="15sp"
                     android:text="←"
                     android:textColor="#000000"
                     android:background="#FFFFFF" />
@@ -57,7 +57,7 @@
                     android:layout_width="15dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textSize="18sp"
+                    android:textSize="15sp"
                     android:text="TURN"
                     android:textColor="#000000"
                     android:background="#FFFFFF" />
@@ -68,17 +68,17 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textSize="18sp"
+                    android:textSize="15sp"
                     android:text="GO"
                     android:textColor="#000000"
                     android:background="#FFFFFF" />
 
                 <Button
                     android:id="@+id/button_right_turn"
-                    android:layout_width="0dp"
+                    android:layout_width="15dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textSize="18sp"
+                    android:textSize="15sp"
                     android:text="TURN"
                     android:textColor="#000000"
                     android:background="#FFFFFF" />
@@ -88,7 +88,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textSize="18sp"
+                    android:textSize="15sp"
                     android:text="→"
                     android:textColor="#000000"
                     android:background="#FFFFFF" />
@@ -102,19 +102,19 @@
                 android:layout_marginTop="32dp">
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/textView_ForB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
-                    android:text="FRONT"
+                    android:text="Forward"
                     android:textColor="#000000" />
 
                 <Switch
-                    android:id="@+id/switch2"
+                    android:id="@+id/switch_ForB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
-                    android:text="Switch"
+                    android:text=""
                     android:textColor="#000000" />
             </LinearLayout>
         </LinearLayout>
