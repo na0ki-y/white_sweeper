@@ -9,88 +9,121 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="50dp"-->
-<!--            android:orientation="horizontal">-->
-
-<!--            <Button-->
-<!--                android:id="@+id/button_front"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_weight="1"-->
-<!--                android:text="↑FRONT" />-->
-<!--        </LinearLayout>-->
-        <TextView
-            android:id="@+id/textView_app_name"
-            android:layout_width="match_parent"
-            android:layout_height="115dp"
-            android:layout_weight="1"
-            android:text="白板忍者" />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button_left"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="←LEFT" />
-
-            <Button
-                android:id="@+id/button_stop"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="GO" />
-
-            <Button
-                android:id="@+id/button_right"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="RIGHT→" />
-        </LinearLayout>
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="50dp"-->
-<!--            android:orientation="horizontal">-->
-
-<!--            <Button-->
-<!--                android:id="@+id/button_back"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_weight="1"-->
-<!--                android:text="BACK↓" />-->
-
-<!--        </LinearLayout>-->
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:padding="32dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:gravity="center">
 
             <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
+                android:id="@+id/textView_app_name"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="FRONT" />
+                android:textSize="36sp"
+                android:text="白板忍者"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginBottom="32dp" />
 
-            <Switch
-                android:id="@+id/switch2"
-                android:layout_width="wrap_content"
+<!--            <ImageButton-->
+<!--                android:layout_width="68dp"-->
+<!--                android:layout_height="41dp"-->
+<!--                android:padding="0dp"-->
+<!--                android:src="@drawable/right" />-->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Switch" />
+                android:orientation="horizontal"
+                android:gravity="center">
 
+                <Button
+                    android:id="@+id/button_left"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:text="←"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button_left_turn"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:text="TURN"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+
+
+                <Button
+                    android:id="@+id/button_go"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:text="GO"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button_right_turn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:text="TURN"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button_right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:text="RIGHT →"
+                    android:textColor="#000000"
+                    android:background="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="32dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="FRONT"
+                    android:textColor="#000000" />
+
+                <Switch
+                    android:id="@+id/switch2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Switch"
+                    android:textColor="#000000" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
