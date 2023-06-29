@@ -14,7 +14,7 @@ public class RaspiHttp extends AsyncTask<String,Void,Void> {//ここが引数
     //これはdoInBackgroundメソッドの引数の型, onProgressUpdateメソッドの引数の型, onPostExecuteメソッドの戻り値の型
     private Activity parentActivity;
     private ProgressDialog dialog=null;
-    private final String DEFAULTURL="http://192.168.11.42:8000";
+    private final String DEFAULTURL="http://192.168.11.56:8000";
     private String uri=null;
     public RaspiHttp(Activity parentActivity){
         this.parentActivity=parentActivity;
