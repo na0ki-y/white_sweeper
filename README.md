@@ -3,9 +3,7 @@
 
 "white_sweeper","白板忍者"はホワイトボードの文字をAndroid Appで制御するロボットデバイスで消すことができるシステムです．
 <img src="img_readme/demo.png" width="200">
-<img src="img_readme/all_pic.png" width="200">
-
-
+<img src="img_readme/all_pic.jpg" width="200">
 
 
 # Features
@@ -13,7 +11,7 @@
 操作するAndroidアプリ、サーバ機能をするRaspberry Pi、クリーナロボットによって構成されます。
 
 <img src="img_readme/overview.png" width="200">
-<img src="img_readme/back.png" width="200">
+<img src="img_readme/back.jpg" width="200">
 # Installation :balloon:
 ## Android App
 Android Studioでこのリポジトリをcloneします．
